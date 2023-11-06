@@ -9,29 +9,31 @@
 </head>
 <body>
 
-    <select name="sinal_a" id="a">
+    <select onchange="set_sinal_a()" name="sinal_a" id="a">
     <option value="-">-</option>
     <option value="+">+</option>
 </select>
-
-<input id="valor_a" class="entrada" type="number">
+<input id="valor_a" class="entrada" onchange="set_valor_a()" type="number">
 <span>x<sup>2</sup></span>
 
-<select name="sinal_b" id="b">
+
+<select onchange="set_sinal_b()" name="sinal_b" id="b">
     <option value="-">-</option>
     <option value="+">+</option>
 </select>
-
-<input id="valor_b" class="entrada" type="number">
+<input id="valor_b" class="entrada" onchange="set_valor_b()" type="number">
 <span>x</span>
 
-<select name="sinal_c" id="c">
+
+<select onchange="set_sinal_c()" name="sinal_c" id="c">
     <option value="-">-</option>
     <option value="+">+</option>
 </select>
+<input id="valor_c" class="entrada" onchange="set_valor_c()" type="number">
+<h5><span id="delta" ></span></h5>
 
-<input id="valor_c" class="entrada" type="number">
-<span> = 0 </span>
+<span id="raiz" > = 0 </span>
+
 
 </body>
 </html>
