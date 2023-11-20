@@ -37,3 +37,16 @@ button{
     background-color: rgb(43, 33, 136);
     color: white;
 }
+
+.pa{
+    width: 400px;
+    background-color: rgb(88, 88, 177);
+    padding: 10px;
+
+}
+
+.calculaPA input{
+    width: 48px;
+    border: none;
+    border: 1px solid #000;
+}
