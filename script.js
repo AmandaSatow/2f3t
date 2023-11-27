@@ -200,4 +200,19 @@ const set_a1 = () => {
 const set_n = () => {
     n = (document.getElementById("n").value);
      mostrar_pa();
- }
+}
+ 
+let num = 0;
+const mudar_imagem = () =>{ 
+    
+    num++; 
+
+    setTimeout(()=>{
+        document.getElementById("figura").src = "./img/imagem"+num+".jpeg";
+        if(num == 3) num = 0;
+        mudar_imagem();
+    },1000);
+
+}
+mudar_imagem();
+ 
